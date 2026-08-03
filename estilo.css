@@ -33,6 +33,9 @@ background-color: #1b5062;
 
 main {
 flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .cabecalho-link{
@@ -55,6 +58,7 @@ color:rgb(142, 162, 179);
 .cartao-interno{
     position: relative;
     transition: transform 0.8s; 
+    transform-style: preserve-3d; 
 }
 
 .cartao-frente, .cartao-verso{

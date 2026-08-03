@@ -1,11 +1,15 @@
-{
+*{
 box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
 
 .cabecalho {
+display: flex;
+justify-content: space-between;
+align-items: center;
 padding: 15px 25px;
+background-color: #0593a2;
 }
 
 .cartao {
@@ -15,4 +19,43 @@ height: 200px;
 
 .cartao-imagem {
 width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: #1b5062;
+}
+
+main {
+flex: 1;
+}
+
+.cabecalho-link{
+color: #0c8cb7;
+text-decoration: none;
+
+}
+
+h1{
+color: #07463e;
+font-size: 20px;
+}
+
+footer{
+background-color: #71adb0;
+padding: 15px 25px;
+color:rgb(142, 162, 179);
+
+}
+.cartao-interno{
+    position: relative;
+}
+
+.cartao-frente, .cartao-verso{
+    position: absolute;
 }
